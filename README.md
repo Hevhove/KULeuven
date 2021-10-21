@@ -1,3 +1,3 @@
 # KULeuven
 
-Projects completed during my studies Artificial Intelligence at the Katholieke Universiteit Leuven
+Projects completed during my Msc studies Artificial Intelligence at the Katholieke Universiteit Leuven
