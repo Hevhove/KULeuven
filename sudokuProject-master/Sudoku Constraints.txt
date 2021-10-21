@@ -1,0 +1,260 @@
+Sudoku 1
+__
+
+sudoku([]).
+sudoku([X|Xs]) :-
+	sudoku_constraint(X),
+	sudoku(Xs).
+
+sudoku_constraint((X,1)) :- !, X = 6.
+sudoku_constraint((X,2)) :- !, X = 1.
+sudoku_constraint((X,8)) :- !, X = 7.
+sudoku_constraint((X,9)) :- !, X = 7.
+sudoku_constraint((X,10)) :- !, X = 2.
+sudoku_constraint((X,11)) :- !, X = 5.
+sudoku_constraint((X,15)) :- !, X = 6.
+sudoku_constraint((X,16)) :- !, X = 9.
+sudoku_constraint((X,20)) :- !, X = 8.
+sudoku_constraint((X,21)) :- !, X = 6.
+sudoku_constraint((X,22)) :- !, X = 4.
+sudoku_constraint((X,25)) :- !, X = 5.
+sudoku_constraint((X,26)) :- !, X = 2.
+sudoku_constraint((X,30)) :- !, X = 2.
+sudoku_constraint((X,31)) :- !, X = 1.
+sudoku_constraint((X,35)) :- !, X = 9.
+sudoku_constraint((X,36)) :- !, X = 9.
+sudoku_constraint((X,38)) :- !, X = 2.
+sudoku_constraint((X,42)) :- !, X = 3.
+sudoku_constraint((X,44)) :- !, X = 1.
+sudoku_constraint((X,45)) :- !, X = 1.
+sudoku_constraint((X,49)) :- !, X = 9.
+sudoku_constraint((X,50)) :- !, X = 6.
+sudoku_constraint((X,54)) :- !, X = 5.
+sudoku_constraint((X,55)) :- !, X = 4.
+sudoku_constraint((X,58)) :- !, X = 7.
+sudoku_constraint((X,59)) :- !, X = 8.
+sudoku_constraint((X,60)) :- !, X = 2.
+sudoku_constraint((X,64)) :- !, X = 1.
+sudoku_constraint((X,65)) :- !, X = 9.
+sudoku_constraint((X,69)) :- !, X = 7.
+sudoku_constraint((X,70)) :- !, X = 8.
+sudoku_constraint((X,71)) :- !, X = 3.
+sudoku_constraint((X,72)) :- !, X = 2.
+sudoku_constraint((X,78)) :- !, X = 9.
+sudoku_constraint((X,79)) :- !, X = 4.
+sudoku_constraint((_,_)).
+
+
+
+__
+
+Sudoku 2
+__
+
+sudoku([]).
+sudoku([X|Xs]) :-
+	sudoku_constraint(X),
+	sudoku(Xs).
+
+sudoku_constraint((X,6)) :- !, X = 6.
+sudoku_constraint((X,7)) :- !, X = 7.
+sudoku_constraint((X,9)) :- !, X = 4.
+sudoku_constraint((X,11)) :- !, X = 6.
+sudoku_constraint((X,12)) :- !, X = 9.
+sudoku_constraint((X,13)) :- !, X = 7.
+sudoku_constraint((X,15)) :- !, X = 3.
+sudoku_constraint((X,20)) :- !, X = 5.
+sudoku_constraint((X,23)) :- !, X = 3.
+sudoku_constraint((X,24)) :- !, X = 9.
+sudoku_constraint((X,25)) :- !, X = 1.
+sudoku_constraint((X,26)) :- !, X = 8.
+sudoku_constraint((X,27)) :- !, X = 9.
+sudoku_constraint((X,28)) :- !, X = 4.
+sudoku_constraint((X,30)) :- !, X = 6.
+sudoku_constraint((X,31)) :- !, X = 5.
+sudoku_constraint((X,32)) :- !, X = 8.
+sudoku_constraint((X,33)) :- !, X = 7.
+sudoku_constraint((X,47)) :- !, X = 3.
+sudoku_constraint((X,48)) :- !, X = 2.
+sudoku_constraint((X,49)) :- !, X = 1.
+sudoku_constraint((X,50)) :- !, X = 7.
+sudoku_constraint((X,52)) :- !, X = 4.
+sudoku_constraint((X,53)) :- !, X = 9.
+sudoku_constraint((X,54)) :- !, X = 5.
+sudoku_constraint((X,55)) :- !, X = 9.
+sudoku_constraint((X,56)) :- !, X = 4.
+sudoku_constraint((X,57)) :- !, X = 7.
+sudoku_constraint((X,60)) :- !, X = 8.
+sudoku_constraint((X,65)) :- !, X = 8.
+sudoku_constraint((X,67)) :- !, X = 3.
+sudoku_constraint((X,68)) :- !, X = 4.
+sudoku_constraint((X,69)) :- !, X = 2.
+sudoku_constraint((X,71)) :- !, X = 5.
+sudoku_constraint((X,73)) :- !, X = 1.
+sudoku_constraint((X,74)) :- !, X = 2.
+sudoku_constraint((_,_)).
+
+__
+
+Sudoku 3
+__
+sudoku([]).
+sudoku([X|Xs]) :-
+	sudoku_constraint(X),
+	sudoku(Xs).
+
+sudoku_constraint((X,1)) :- !, X = 4.
+sudoku_constraint((X,2)) :- !, X = 2.
+sudoku_constraint((X,4)) :- !, X = 8.
+sudoku_constraint((X,7)) :- !, X = 9.
+sudoku_constraint((X,8)) :- !, X = 5.
+sudoku_constraint((X,11)) :- !, X = 3.
+sudoku_constraint((X,15)) :- !, X = 8.
+sudoku_constraint((X,17)) :- !, X = 2.
+sudoku_constraint((X,18)) :- !, X = 8.
+sudoku_constraint((X,23)) :- !, X = 2.
+sudoku_constraint((X,24)) :- !, X = 1.
+sudoku_constraint((X,28)) :- !, X = 5.
+sudoku_constraint((X,29)) :- !, X = 7.
+sudoku_constraint((X,30)) :- !, X = 6.
+sudoku_constraint((X,32)) :- !, X = 4.
+sudoku_constraint((X,33)) :- !, X = 9.
+sudoku_constraint((X,34)) :- !, X = 3.
+sudoku_constraint((X,39)) :- !, X = 3.
+sudoku_constraint((X,41)) :- !, X = 7.
+sudoku_constraint((X,46)) :- !, X = 6.
+sudoku_constraint((X,47)) :- !, X = 4.
+sudoku_constraint((X,48)) :- !, X = 2.
+sudoku_constraint((X,50)) :- !, X = 8.
+sudoku_constraint((X,51)) :- !, X = 5.
+sudoku_constraint((X,52)) :- !, X = 1.
+sudoku_constraint((X,56)) :- !, X = 6.
+sudoku_constraint((X,57)) :- !, X = 9.
+sudoku_constraint((X,62)) :- !, X = 1.
+sudoku_constraint((X,63)) :- !, X = 9.
+sudoku_constraint((X,65)) :- !, X = 8.
+sudoku_constraint((X,69)) :- !, X = 7.
+sudoku_constraint((X,72)) :- !, X = 5.
+sudoku_constraint((X,73)) :- !, X = 7.
+sudoku_constraint((X,76)) :- !, X = 3.
+sudoku_constraint((X,78)) :- !, X = 4.
+sudoku_constraint((X,79)) :- !, X = 2.
+sudoku_constraint((_,_)).
+__
+
+Sudoku 4
+
+__
+sudoku([]).
+sudoku([X|Xs]) :-
+	sudoku_constraint(X),
+	sudoku(Xs).
+
+sudoku_constraint((X,4)) :- !, X = 8.
+sudoku_constraint((X,7)) :- !, X = 9.
+sudoku_constraint((X,12)) :- !, X = 6.
+sudoku_constraint((X,14)) :- !, X = 4.
+sudoku_constraint((X,17)) :- !, X = 1.
+sudoku_constraint((X,19)) :- !, X = 7.
+sudoku_constraint((X,20)) :- !, X = 8.
+sudoku_constraint((X,25)) :- !, X = 5.
+sudoku_constraint((X,27)) :- !, X = 8.
+sudoku_constraint((X,31)) :- !, X = 4.
+sudoku_constraint((X,33)) :- !, X = 5.
+sudoku_constraint((X,36)) :- !, X = 3.
+sudoku_constraint((X,39)) :- !, X = 9.
+sudoku_constraint((X,41)) :- !, X = 2.
+sudoku_constraint((X,44)) :- !, X = 8.
+sudoku_constraint((X,47)) :- !, X = 4.
+sudoku_constraint((X,49)) :- !, X = 1.
+sudoku_constraint((X,53)) :- !, X = 7.
+sudoku_constraint((X,55)) :- !, X = 1.
+sudoku_constraint((X,60)) :- !, X = 6.
+sudoku_constraint((X,61)) :- !, X = 2.
+sudoku_constraint((X,63)) :- !, X = 5.
+sudoku_constraint((X,66)) :- !, X = 1.
+sudoku_constraint((X,68)) :- !, X = 9.
+sudoku_constraint((X,73)) :- !, X = 4.
+sudoku_constraint((X,76)) :- !, X = 6.
+sudoku_constraint((_,_)).
+__
+
+Sudoku 5
+
+__
+
+sudoku([]).
+sudoku([X|Xs]) :-
+	sudoku_constraint(X),
+	sudoku(Xs).
+
+sudoku_constraint((X,2)) :- !, X = 6.
+sudoku_constraint((X,3)) :- !, X = 5.
+sudoku_constraint((X,6)) :- !, X = 8.
+sudoku_constraint((X,7)) :- !, X = 3.
+sudoku_constraint((X,10)) :- !, X = 7.
+sudoku_constraint((X,13)) :- !, X = 8.
+sudoku_constraint((X,22)) :- !, X = 6.
+sudoku_constraint((X,24)) :- !, X = 4.
+sudoku_constraint((X,26)) :- !, X = 1.
+sudoku_constraint((X,27)) :- !, X = 7.
+sudoku_constraint((X,32)) :- !, X = 4.
+sudoku_constraint((X,33)) :- !, X = 3.
+sudoku_constraint((X,38)) :- !, X = 8.
+sudoku_constraint((X,42)) :- !, X = 7.
+sudoku_constraint((X,47)) :- !, X = 2.
+sudoku_constraint((X,48)) :- !, X = 6.
+sudoku_constraint((X,53)) :- !, X = 5.
+sudoku_constraint((X,54)) :- !, X = 8.
+sudoku_constraint((X,56)) :- !, X = 5.
+sudoku_constraint((X,58)) :- !, X = 4.
+sudoku_constraint((X,67)) :- !, X = 2.
+sudoku_constraint((X,70)) :- !, X = 9.
+sudoku_constraint((X,73)) :- !, X = 6.
+sudoku_constraint((X,74)) :- !, X = 7.
+sudoku_constraint((X,77)) :- !, X = 9.
+sudoku_constraint((X,78)) :- !, X = 5.
+sudoku_constraint((_,_)).
+
+__
+
+Sudoku 6
+
+__
+
+sudoku([]).
+sudoku([X|Xs]) :-
+	sudoku_constraint(X),
+	sudoku(Xs).
+
+sudoku_constraint((X,0)) :- !, X = 7.
+sudoku_constraint((X,3)) :- !, X = 9.
+sudoku_constraint((X,5)) :- !, X = 6.
+sudoku_constraint((X,11)) :- !, X = 4.
+sudoku_constraint((X,14)) :- !, X = 7.
+sudoku_constraint((X,16)) :- !, X = 6.
+sudoku_constraint((X,17)) :- !, X = 9.
+sudoku_constraint((X,19)) :- !, X = 1.
+sudoku_constraint((X,21)) :- !, X = 2.
+sudoku_constraint((X,22)) :- !, X = 4.
+sudoku_constraint((X,28)) :- !, X = 5.
+sudoku_constraint((X,33)) :- !, X = 7.
+sudoku_constraint((X,36)) :- !, X = 6.
+sudoku_constraint((X,44)) :- !, X = 1.
+sudoku_constraint((X,47)) :- !, X = 2.
+sudoku_constraint((X,52)) :- !, X = 8.
+sudoku_constraint((X,58)) :- !, X = 2.
+sudoku_constraint((X,59)) :- !, X = 4.
+sudoku_constraint((X,61)) :- !, X = 5.
+sudoku_constraint((X,63)) :- !, X = 4.
+sudoku_constraint((X,64)) :- !, X = 3.
+sudoku_constraint((X,66)) :- !, X = 8.
+sudoku_constraint((X,69)) :- !, X = 9.
+sudoku_constraint((X,75)) :- !, X = 1.
+sudoku_constraint((X,77)) :- !, X = 3.
+sudoku_constraint((X,80)) :- !, X = 7.
+sudoku_constraint((_,_)).
+
+___
+
+
